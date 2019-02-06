@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: gamestop
+server:
+  port: 80
+ 
