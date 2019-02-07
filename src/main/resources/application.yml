@@ -2,5 +2,5 @@ spring:
   application:
     name: gamestop
 server:
-  port: 80
+  port: 9595
  

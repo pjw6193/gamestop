@@ -5,10 +5,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.demo.gamestop.beans.Game;
+import com.revature.demo.gamestop.controllers.GameController;
 import com.revature.demo.gamestop.data.GameRepository;
 import com.revature.demo.gamestop.exceptions.GameUnavailableForPurchaseException;
 import com.revature.demo.gamestop.exceptions.IllegalRecordUpdateException;
@@ -20,8 +22,11 @@ public class GameService {
 	@Autowired
 	private GameRepository gameRepository;
 
+	private static final Logger log = Logger.getLogger(GameController.class);
+
 	/**
 	 * TODO be implemented as part of the demo. Solution below
+	 * 
 	 * @param game
 	 * @return
 	 */
@@ -30,8 +35,10 @@ public class GameService {
 		if (toBuy.getQuantity() > 0 && toBuy.getDateAvailable().before(new Date())) {
 			toBuy.setQuantity((toBuy.getQuantity() - 1));
 			update(toBuy);
+			log.info("Purchasing game: " + game.getTitle() + " New quantity: " + toBuy.getQuantity());
 			return toBuy.getQuantity();
 		} else {
+			log.info("Not available: " + game.getTitle());
 			throw new GameUnavailableForPurchaseException("Sorry.. game is unavailable for purchase.");
 		}
 	}
