@@ -1,3 +1,3 @@
 # GameStop Architecture
 
-![architecture](www.github.com/pjw6193/gamestop/architecture.png)
+![architecture](https://github.com/pjw6193/gamestop/blob/master/architecture.png)
