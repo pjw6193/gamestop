@@ -24,22 +24,19 @@ public class GameService {
 
 	private static final Logger log = Logger.getLogger(GameController.class);
 
-	/**
-	 * TODO be implemented as part of the demo. Solution below
-	 * 
-	 * @param game
-	 * @return
-	 */
 	public synchronized Integer purchase(Game game) {
+		// find the game 
 		Game toBuy = gameRepository.findById(game.getId()).get();
-		if (toBuy.getQuantity() > 0 && toBuy.getDateAvailable().before(new Date())) {
-			toBuy.setQuantity((toBuy.getQuantity() - 1));
-			update(toBuy);
-			log.info("Purchasing game: " + game.getTitle() + " New quantity: " + toBuy.getQuantity());
-			return toBuy.getQuantity();
-		} else {
-			log.info("Not available: " + game.getTitle());
-			throw new GameUnavailableForPurchaseException("Sorry.. game is unavailable for purchase.");
+		
+		// check the quantity > 0 && check date for available
+		if(toBuy.getQuantity() > 0 && toBuy.getDateAvailable().before(new Date())) {
+			// update the database -1 from quantity
+			toBuy.setQuantity(toBuy.getQuantity() - 1);
+			Game updated = update(toBuy);
+			return updated.getQuantity();
+		}else {
+			// if failure, GameUnavailable
+			throw new GameUnavailableForPurchaseException();
 		}
 	}
 
