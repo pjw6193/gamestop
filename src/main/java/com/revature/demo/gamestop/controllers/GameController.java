@@ -20,7 +20,7 @@ import com.revature.demo.gamestop.beans.Game;
 import com.revature.demo.gamestop.services.GameService;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 public class GameController {
 
 	@Autowired
