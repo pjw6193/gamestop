@@ -8,7 +8,7 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.revature.demo</groupId>
+	<groupId>com.example.demo</groupId>
 	<artifactId>gamestop</artifactId>
 	<version>1.0</version>
 	<name>gamestop</name>

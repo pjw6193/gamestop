@@ -1,4 +1,4 @@
-package com.revature.demo.gamestop.beans;
+package com.example.demo.gamestop.beans;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.revature.demo.gamestop;
+package com.example.demo.gamestop;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

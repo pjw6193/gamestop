@@ -1,4 +1,4 @@
-package com.revature.demo.gamestop;
+package com.example.demo.gamestop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

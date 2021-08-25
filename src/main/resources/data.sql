@@ -1,4 +1,3 @@
--- Generated 2/6/2019 11:15AM by Mockaroo https://mockaroo.com/
 insert into GAME (game_id, image_url, game_title, date_available, game_price, quantity_available, genre) values (1, '../../assets/images/1.jpg', 'Jay And Silent Bob''s Super Groovy Cartoon Movie', '2019-02-24', 85.45, 14, 'Action | Adventure | Thriller');
 insert into GAME (game_id, image_url, game_title, date_available, game_price, quantity_available, genre) values (2, '../../assets/images/2.jpg', 'Record of a Tenement Gentleman (Nagaya shinshiroku)', '2019-03-10', 98.44, 3,'Action | Adventure | Thriller');
 insert into GAME (game_id, image_url, game_title, date_available, game_price, quantity_available, genre) values (3, '../../assets/images/3.jpg', 'Map of the Sounds of Tokyo', '2019-02-04', 95.66, 0, 'Thriller');

@@ -1,4 +1,4 @@
-package com.revature.demo.gamestop.controllers;
+package com.example.demo.gamestop.controllers;
 
 import java.util.List;
 
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.demo.gamestop.beans.Game;
-import com.revature.demo.gamestop.services.GameService;
+import com.example.demo.gamestop.beans.Game;
+import com.example.demo.gamestop.services.GameService;
 
 @RestController
 @CrossOrigin(origins="*")

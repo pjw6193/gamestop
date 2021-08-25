@@ -1,4 +1,4 @@
-package com.revature.demo.gamestop.services;
+package com.example.demo.gamestop.services;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -9,12 +9,12 @@ import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.revature.demo.gamestop.beans.Game;
-import com.revature.demo.gamestop.controllers.GameController;
-import com.revature.demo.gamestop.data.GameRepository;
-import com.revature.demo.gamestop.exceptions.GameUnavailableForPurchaseException;
-import com.revature.demo.gamestop.exceptions.IllegalRecordUpdateException;
-import com.revature.demo.gamestop.exceptions.PrimaryKeyConstraintViolationException;
+import com.example.demo.gamestop.beans.Game;
+import com.example.demo.gamestop.controllers.GameController;
+import com.example.demo.gamestop.data.GameRepository;
+import com.example.demo.gamestop.exceptions.GameUnavailableForPurchaseException;
+import com.example.demo.gamestop.exceptions.IllegalRecordUpdateException;
+import com.example.demo.gamestop.exceptions.PrimaryKeyConstraintViolationException;
 
 @Service
 public class GameService {
