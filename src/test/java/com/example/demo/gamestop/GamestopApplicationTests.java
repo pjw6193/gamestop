@@ -13,18 +13,18 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.example.demo.gamestop.beans.Game;
 import com.example.demo.gamestop.services.GameService;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class GamestopApplicationTests {
 
-	@Autowired
+	//@Autowired
 	private GameService gameService;
 	
 	/**
 	 * TODO be implemented as part of the demo. Solution below
 	 */
-	@Test
-	@Transactional
+	//@Test
+	//@Transactional
 	public void purchase() {
 		Game game = gameService.findById(61);
 		int expected = game.getQuantity() - 1;

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gamestop
+  labels:
+    app: gamestop
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gamestop
+  template:
+    metadata:
+      labels:
+        app: gamestop
+    spec:
+      containers:
+        - name: gamestop-app
+          image: pjw6193/gamestop:latest
+          ports:
+            - containerPort: 9595
