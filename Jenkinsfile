@@ -4,7 +4,7 @@ pipeline {
         maven 'Maven' 
     }
     environment {
-        TAG = "${BUILD_NUMBER}"
+        TAG = "1.0.${BUILD_NUMBER}"
     }
     stages {
         stage ('Build') {
