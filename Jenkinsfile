@@ -4,8 +4,7 @@ pipeline {
         maven 'Maven' 
     }
     environment {
-        DATE = new Date().format('yy.M')
-        TAG = "${DATE}.${BUILD_NUMBER}"
+        TAG = "${BUILD_NUMBER}"
     }
     stages {
         stage ('Build') {
@@ -23,14 +22,14 @@ pipeline {
 	    stage('Pushing Docker Image to Dockerhub') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker_credential') {
+                    docker.withRegistry('https://registry.hub.docker.com', '9eab68a3-d07c-4b70-ab61-3c60961290f7') {
                         docker.image("pjw6193/gamestop:${TAG}").push()
                         docker.image("pjw6193/gamestop:${TAG}").push("latest")
                     }
                 }
             }
         }
-        stage('Deploy'){
+        stage('Run local'){
             steps {
                 sh "docker stop gamestop | true"
                 sh "docker rm gamestop | true"
