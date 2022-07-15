@@ -3,4 +3,3 @@ spring:
     name: gamestop
 server:
   port: 9595
- 
