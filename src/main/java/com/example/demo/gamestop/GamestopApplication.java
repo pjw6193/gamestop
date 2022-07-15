@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GamestopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GamestopApplication.class, args)
+		SpringApplication.run(GamestopApplication.class, args);
 	}
 
 }
