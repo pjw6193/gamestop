@@ -6,6 +6,6 @@ spec:
   selector:
     app: gamestop
   ports:
-    - port: 9999
-      targetPort: 9595
+    - port: 8125
+      targetPort: 8080
   type: LoadBalancer
