@@ -18,4 +18,4 @@ spec:
         - name: gamestop-app
           image: pjw6193/gamestop:latest
           ports:
-            - containerPort: 9595
+            - containerPort: 8080
