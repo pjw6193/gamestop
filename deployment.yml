@@ -15,7 +15,7 @@ spec:
         app: gamestop
     spec:
       containers:
-        - name: gamestop-app
+        - name: gamestop
           image: pjw6193/gamestop:latest
           ports:
             - containerPort: 8080
