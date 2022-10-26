@@ -1,0 +1,9 @@
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\data\GameRepository.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\exceptions\PrimaryKeyConstraintViolationException.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\exceptions\GameUnavailableForPurchaseException.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\exceptions\IllegalRecordUpdateException.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\GamestopApplication.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\SwaggerConfig.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\controllers\GameController.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\services\GameService.java
+C:\demo\gamestop\src\main\java\com\example\demo\gamestop\beans\Game.java
