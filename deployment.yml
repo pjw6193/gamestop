@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: gamestop
-          image: pjw6193/gamestop:latest
+          image: pjw6193/gamestop
           ports:
             - containerPort: 8080
